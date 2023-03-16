@@ -1,16 +1,10 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+import { FooterComponent } from './components/shared/componentes/footer/footer.component';
 import { SharedModule } from './components/shared/shared.module';
+
 
 
 @NgModule({
@@ -18,7 +12,6 @@ import { SharedModule } from './components/shared/shared.module';
     AppComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
     SharedModule
   ],

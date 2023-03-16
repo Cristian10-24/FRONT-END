@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavigationComponent } from './componentes/navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { FooterComponent } from './componentes/footer/footer.component';
+import { UbicacionComponent } from './componentes/ubicacion/ubicacion.component';
+import { MainNavComponent } from './componentes/main-nav/main-nav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
 @NgModule({
   declarations: [
-    NavigationComponent
+    FooterComponent,
+    UbicacionComponent,
+    MainNavComponent
   ],
   imports: [
     CommonModule,
@@ -22,6 +27,7 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    BrowserAnimationsModule
   ],
   exports: [
     CommonModule,
@@ -31,7 +37,10 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    NavigationComponent
+    FooterComponent,
+    UbicacionComponent,
+    MainNavComponent,
+    BrowserAnimationsModule
   ]
 })
-export class SharedModule { }
+export class SharedModule {  }
